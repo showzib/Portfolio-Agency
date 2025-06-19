@@ -1,0 +1,248 @@
+body {
+    overflow-x: hidden !important;
+    width: 100vw;
+}
+
+/* navbar */
+.navbar {
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-heading {
+    width: 52vw !important;
+}
+
+.active #line {
+    background-color: #ab641d;
+    transition: width 0.5s;
+    margin-top: 3px;
+    height: 0.3vh;
+    display: flex;
+    width: 0vw;
+}
+
+.active #line {
+    width: 40px;
+}
+
+.active {
+    color: #ab641d !important;
+}
+
+#line {
+    background-color: #ab641d;
+    width: 0vw;
+    transition: width 0.5s;
+    height: 0.3vh;
+    display: flex;
+    margin-top: 3px;
+}
+
+.nav-item:hover #line {
+    width: 40px;
+}
+
+.nav-item:hover a {
+    color: #ab641d !important;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:active {
+    background-color: white !important;
+}
+
+/* end navbar */
+/* post-cover */
+.post-cover {
+    position: relative;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgColor {
+    padding: 60px 40px;
+    background-color: #14171c;
+    height: 70vh;
+    width: 100vw;
+    opacity: 0.4;
+    background-blend-mode: normal;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 10vh;
+    left: 4vw;
+    color: white;
+}
+
+.postHeading {
+    width: 90vw;
+}
+
+.postHeading h1 {
+    font-size: 65px;
+}
+
+#postWriter a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+/* end post-cover */
+
+/* content */
+.contentDiv {
+    margin-bottom: 25vh;
+}
+
+/* end content */
+
+/* respond */
+.respond {
+    background-color: #ededed;
+    margin-top: 20vh;
+}
+
+.respondForm {
+    display: grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+}
+
+.respndForm label {
+    display: block;
+    margin-bottom: 3vh;
+}
+
+.respndName {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.respndForm input {
+    border: none;
+    padding: 10px 12px;
+}
+
+.respndForm textarea {
+    border: none;
+    width: 97%;
+    padding: 10px 12px;
+}
+
+#checkLabel {
+    display: inline-block;
+    margin-left: 1vw;
+}
+
+.respndBtn button {
+    background-color: #fcaf3b;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .5s;
+}
+
+.respndBtn button:hover {
+    background-color: #ab641d;
+    color: white;
+}
+
+/* end respond */
+/* sidebar */
+.sidebarCol {
+    width: 25% !important;
+}
+
+.search {
+    border: 1px solid #ededed;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+.search button {
+    background: none;
+    padding: 6px;
+    padding-left: 0px;
+    border: 1px solid #ededed;
+    border-left: none;
+    width: 20%;
+}
+
+.search input {
+    padding: 6px;
+    padding-right: 0px;
+    border: 1px solid #ededed;
+    border-right: none;
+    width: 80%;
+}
+
+.search input[type=search] {
+    outline-offset: -22px;
+}
+
+#searchinp:focus-visible {
+    box-shadow: 0 0 5px 0 #ab641d;
+    border-right: none;
+}
+
+.recentPosts ul {
+    list-style-type: none;
+    padding: 0px;
+}
+.recentPosts ul li {
+    margin-top: 2.5vh;
+}
+
+.recentPosts ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.recentPosts ul a:hover {
+    color: rgb(51, 51, 51);
+}
+
+/* end sidebar */
+/* copyright */
+.copyright {
+    background-color: black;
+    color: white;
+    padding-left: 5vw;
+    margin-bottom: -3vh;
+}
+
+/* end copyright */
+
+
+@media (max-width: 768px) {
+    .postHeading h1 {
+        font-size: 50px;
+    }
+
+    .sidebarCol {
+        width: 100% !important;
+        margin-top: 5vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        width: 69%;
+    }
+}
